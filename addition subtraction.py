@@ -3,7 +3,7 @@ print("result0",result0)
 print(f"2 + 3 * 4 = {result0}")
 
 result1 = (2 + 3) * 4
-print("result0",result1)
+print("result1",result1)
 print(f"(2 + 3) * 4 = {result1}")
 
 result3 = 10 - 3 ** 4
