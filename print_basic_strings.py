@@ -7,9 +7,9 @@ print(" Gamers loved it", "and by the end of its lifetime, it had sold more than
 
 # 2. Create a string that includes both single and double quotes.
 # TODO:
-print('''Memorable quotes from arthur morgan: \n
-"We can't change what's done, we can only move on."\n
-"We are thieves in a world that don’t want us no more."\n
+print('''Memorable quotes from arthur morgan: \n\t
+"We can't change what's done, we can only move on."\n\t
+"We are thieves in a world that don’t want us no more."\n\t
 "Be loyal to what matters."
 ''')
 # 3. Use escape characters to create a formatted list.
