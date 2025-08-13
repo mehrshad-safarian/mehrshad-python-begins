@@ -44,9 +44,14 @@ print('python' + ' ' + 'javascript')#this one is also add space between them
 print()
 # Task 8: Mix quotes
 # Your code here
+print("Once upon a time there was a great king in Iran named 'Cyrus The Great'.")
+print('Once upon a time there was a great king in Iran named "Cyrus The Great".')
+
 
 # Task 9: Print multiple items
 # Your code here
+print("Cyrus", "The", "Great", 550, "BC")
+
 
 # Hint: Remember to use print() function for all tasks
 # Hint: Pay attention to quotation marks and indentation
