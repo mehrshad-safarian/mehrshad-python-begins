@@ -1,0 +1,12 @@
+# Input & Output 
+
+# Taking input from the user
+name = input("What's your name? ")
+birthday = input("how old r u? ")
+job = input("What's your job? ")
+
+# Processing the input
+message = f"Hello, {name}! Nice to meet you.\nu r  {birthday} year old and u r successful {job}."
+
+# Output
+print(message)
