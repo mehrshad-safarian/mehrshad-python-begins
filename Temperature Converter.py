@@ -1,4 +1,4 @@
-Get input from user
+#Get input from user
 temp = float(input("Enter temperature: "))
 unit = input("Enter unit (C for Celsius, F for Fahrenheit): ").upper()
 
