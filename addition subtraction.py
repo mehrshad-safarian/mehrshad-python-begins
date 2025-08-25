@@ -12,4 +12,4 @@ print(f"10 - 3 ** 4 = {result3}")
 
 result4 = (12 - 2) * 5 ** 2
 print("result4",result4)
-print(f"2 - 3 ** 4 = {result4}")
+print(f"2 - 3 ** 4 = {result4}") 
