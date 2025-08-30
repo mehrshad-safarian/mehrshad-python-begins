@@ -1,0 +1,3 @@
+name = "mah"
+print(name[1:3])
+print(name.replace(__old:'m',__new:'r'))
