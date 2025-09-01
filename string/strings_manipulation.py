@@ -5,7 +5,7 @@ last_name = "safarian"
 # Create a variable full_name by concatenating first_name and last_name with a space in between.
 full_name = "mehrshad_safarian"
 #  Print out the fuul_name.
-print(full_name)
+print(f"full name:,'{full_name}'")
 # Print out the length of full_name using the len()function.
 word_length = len(full_name)
 print(f"'{full_name}' has {word_length} characters")
