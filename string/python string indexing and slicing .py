@@ -69,4 +69,12 @@ if __name__ == "__main__":
     print("Python String Indexing and Slicing Demo\n")
     demonstrate_indexing()
     demonstrate_slicing()
+
     demonstrate_practical_examples()
+
+
+
+
+#
+#
+#
