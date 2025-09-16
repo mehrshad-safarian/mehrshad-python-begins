@@ -5,6 +5,6 @@ count = 0
 
 for ch in text:
     if ch in vowels:
-        count += 1
+        x += 1
 
-print("Number of vowels:", count) 
+print("Number of vowels:", x) 
