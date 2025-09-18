@@ -1,1 +1,10 @@
 
+import re
+
+# Pattern matching with multiple delimiters
+match = re.match(r'[/:](.*?)[/:](.*?)[/:](.*)', '/etc/config:settings')
+print(match.groups())  # Output: ('etc', 'config', 'settings')
+
+# Splitting with multiple delimiters
+result = re.split(r'[/:]', '/etc/config/settings')
+print(result)  # Output: ['', 'etc', 'config', 'settings']
