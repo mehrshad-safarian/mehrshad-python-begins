@@ -30,4 +30,4 @@ if get_email.lower() in email_Pcondictatin:
 elif get_email.lower() in email_Ncondictatin:
     print("i\'m so sorry ! u are not invited")
 else:
-    print("sorry ur answer wasnt clear so u cant get in to the party ")
+    print("sorry ur answer wasnt clear so u cant get in to the party !")
