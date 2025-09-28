@@ -19,10 +19,10 @@ class Car:
 my_car = Car()
 # Call the details method
 my_car.details()
-# تعریف کلاس Car با سازنده (__init__)
+# تعریف کلاس Car با      (__init__)
 class Car:
     def __init__(self, make, model, year):
-        # مقادیر ورودی رو به ویژگی‌های شیء اختصاص میدیم
+        # مقادیر ورودی رو به ویژگی‌های شی اختصاص میدیم
         self.make = make
         self.model = model
         self.year = year

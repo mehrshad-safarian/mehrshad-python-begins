@@ -1,26 +1,10 @@
-# دریافت نام کشور
-homeland = input("Pls enter the name of ur homeland :").strip()
+#using the try and except blocks, use tab to indent where necessary
+try:
+    temp = float( input("Type a number to add: "))
+    print( '100 = {} = {}'.format(temp, 100 + temp) )
+# without try/except print statement woould not get hit if error occurs
+print("the program did not break!")
 
-# تعداد شهرهای مورد علاقه
-num_countries = int(input("How many fav countries do u have?"))
-# لیست برای ذخیره‌ی شهرها
-countries = []
-
-# گرفتن اسم شهرها و ذخیره کردن
-for i in range(num_countries):
-    country = input(f"Enter the name of country #{i+1}: ").strip()
-    countries.append(country)
-
-# بررسی حروف اول
-vowels = ('a', 'e', 'i', 'o', 'u')
-for country in countries: 
-    if country.lower().startswith(vowels):
-        print(f"{country.title()} starts with a vowel")
-    else:
-        print(f"{country.title()} starts with a consonant!")
-
-# چاپ نتیجه‌ی نهایی
-print(f"\nYour country: {country.title()}")
-print("Your favorite countries:")
-for c in countries:
-    print(f"- {c.title()}")
+type a number to add: 11
+100 + 11.0 = 111.0
+print("the program did not break !")
