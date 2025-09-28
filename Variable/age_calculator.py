@@ -1,4 +1,4 @@
 current_year = 2025
-age = input("how old are u? ")
-birth_year = current_year - int(age)
-print(f"cool!".title(),"u were botn in", birth_year)
+birth_year = input("Pls enter the year u were born at :")
+age = current_year - int(birth_year)
+print(f"niiice".title(),"my friend! so u are", age ,"year old!")
