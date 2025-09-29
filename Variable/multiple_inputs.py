@@ -1,34 +1,83 @@
 # create program that gathers the user's name, age, and hometown, then crafts
 # a summary sentence using this information.
-name = input("Pls Enter ur name :").strip()
-age = input("How old ar u ?").strip()
-hometown = input("where do u live ?").strip()
+while True:
+    name = input("Pls Enter ur name :").strip()
+    if name:         
+        break
+    else:
+        print("Pls enter at least one word!")
+
+while True:
+    age_input = input("How old ar u ?").strip()
+    try:
+        age = int(age_input)  # try for having num
+        break  # if user did it right break the cycle
+    except ValueError:
+        print("Pls enter a valid number! Try again...")
+
+while True:
+    hometown = input("where do u live ?").strip()
+    if hometown:         
+        break
+    else:
+        print("Pls enter at least one word!")
+
 
 print(f"nice to know u {name.capitalize()} . so u are {age} years old !from lovely {hometown.capitalize()} ")
 
 # pet description 
 # write a program that asks for a pet's name ,species, and age, then generates
 # a sentence describing the pet
-pet_name = input("ur pet's name :").strip()
-species = input("What species is it :").strip()
-p_age = input("how old ur pet is :").strip()
+while True:
+    pet_name = input("ur pet's name :").strip()
+    if pet_name:         
+        break
+    else:
+        print("Pls enter at least one word!")
 
-print(f"ur pet name is {pet_name.capitalize()} . it's a {species.capitalize()} . and it has {p_age.capitalize()} year old")
+while True:
+    species = input("What species is it :").strip()
+    if species:         
+        break
+    else:
+        print("Pls enter at least one word!")
+
+while True:
+    p_age0 = input("how old ur pet is :").strip()
+    try:
+        p_age = int(p_age0)  # try for having num
+        break  # if user did it right break the cycle
+    except ValueError:
+        print("Pls enter a valid number! Try again...")
+
+print(f"ur pet name is {pet_name.capitalize()} . it's a {species.capitalize()} . and it has {p_age} year old")
 
 # travel planner
 # develop a program that requests a destination , mode of transport, and duration 
 # of stay, then prints a brief travel plan 
-destination = input("Pls Enter ur destination :").strip()
-transport = input ("What is ur preferred mode of transport :").strip()
+while True:
+    destination = input("Pls Enter ur destination :").strip()
+    if destination:          
+        break
+    else:
+        print("Pls enter at least one word!")
+
+while True:
+    transport = input("What is your preferred mode of transport: ").strip()
+    if transport:         
+        break
+    else:
+        print("Pls enter at least one word!")
+
 while True:
     duration_input = input("How long are you gonna stay there (in days)? ").strip()
     try:
         duration = int(duration_input)  # try for having num
         break  # if user did it right break the cycle
     except ValueError:
-        print("Please enter a valid number! Try again...")
+        print("Pls enter a valid number! Try again...")
 
-print(f"ur destination is {destination.capitalize()}. so u picked {transport.capitalize()} for transportation . and u r gonna sta there for {int(duration)} ")
+print(f"ur destination is {destination.capitalize()}. so u picked {transport.capitalize()} for transportation . and u r gonna stay there for {int(duration)} day's")
 
 # summary 
 summary = f"""
