@@ -8,10 +8,5 @@
 # type a number to add: 11
 # 100 + 11.0 = 111.0
 # print("the program did not break !")
-while True:
-    transport = input("What is your preferred mode of transport: ").strip()
-    if transport:          # یعنی خالی نباشه
-        break
-    else:
-        print("Please enter at least one word!")
-print(transport)
+a = [5, 10]
+print(id(a))
