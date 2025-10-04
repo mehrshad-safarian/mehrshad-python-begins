@@ -1,0 +1,7 @@
+party_list = ["mmd", "ali", "gholi"]
+print("party_list before: ", party_list)
+print("index 1 is", party_list[1])
+print("index 2 is", party_list[2], "\n")
+party_list.insert(1,"mmd_gholi")
+print("party_list after: ", party_list)
+print("index 1 is", party_list[1],"\nindex 2 is", party_list[2], "\nindex 3 is", party_list[3])
