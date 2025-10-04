@@ -1,10 +1,10 @@
-party_list = ["mehrshad","megan","sophie"]
+party_list = ["megan","mehrshad","sophie"]
 print(party_list)
 print("party list before:", party_list, "\n")
-party_list[1] = "mehrshad"
+party_list[2] = "megan"
 print("party list after:", party_list, "\n")
 
-party_list = ["mehrshad", "megan","sophie"]
+party_list = ["megan","mehrshad","sophie"]
 print(party_list)
 print("before:", party_list, "\n")
 party_list[1] = party_list[1] + " and scarlet"
