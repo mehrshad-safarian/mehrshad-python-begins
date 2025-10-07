@@ -1,4 +1,4 @@
-cities = ["New York", "Shanghai", "Munich", "Tokyo", "Dubai", "Mexico City", "São Paulo", "Hyderabad"]
+cities = ["New York", "Shanghai", "Munich", "Tokyo", "Dubai", "Mexico City", "São Paulo", "tehran", "shiraz"]
 search_letter = "a"
 total = 0
 
