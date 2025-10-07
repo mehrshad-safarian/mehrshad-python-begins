@@ -81,17 +81,17 @@ print(f"ur destination is {destination.capitalize()}. so u picked {transport.cap
 
 # summary 
 summary = f"""
---- User Info ---
+User Info
 Name: {name.capitalize()}
 Age: {age}
 Hometown: {hometown.capitalize()}
 
---- Pet Info ---
+Pet Info
 Pet Name: {pet_name.capitalize()}
 Species: {species.capitalize()}
 Pet Age: {p_age} years old
 
---- Travel Plan ---
+Travel Plan
 Destination: {destination.capitalize()}
 Transport: {transport.capitalize()}
 Duration: {duration} days
