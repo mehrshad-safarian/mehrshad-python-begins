@@ -9,9 +9,9 @@ class book:
         print("author:", self.author)
         print("year:", self.year)
         #def info(self):
-            # print(f"Title: {self.title}")
-            # print(f"Author: {self.author}")
-            # print(f"Year: {self.year}")
+        # print(f"Title: {self.title}")
+        # print(f"Author: {self.author}")
+        # print(f"Year: {self.year}")
 
 title = input ("pls enter the title of ur book:")
 author = input("pls enter the name of author:")

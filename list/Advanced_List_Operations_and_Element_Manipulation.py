@@ -26,3 +26,7 @@ digits = [8, 2, 9]
 print(min(digits))
 print(max(digits))
 print(sum(digits))
+ # using the sorted list 
+nums = [1,2,6,9]
+sorted_nums = sorted(nums)
+print(nums, sorted_nums)
