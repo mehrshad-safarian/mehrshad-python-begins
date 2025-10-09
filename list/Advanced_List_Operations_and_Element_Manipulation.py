@@ -30,3 +30,10 @@ print(sum(digits))
 nums = [1,2,6,9]
 sorted_nums = sorted(nums)
 print(nums, sorted_nums)
+
+# using conditional statement on a list 
+names = ["arthur", "john", "dutch"]
+if "arthur" in names:
+    print("found")
+if "micah" not in names:
+    print("not found")
