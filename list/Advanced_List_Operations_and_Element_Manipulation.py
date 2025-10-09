@@ -34,6 +34,24 @@ print(nums, sorted_nums)
 # using conditional statement on a list 
 names = ["arthur", "john", "dutch"]
 if "arthur" in names:
-    print("found")
+    print("found") # will run since arthur is on the list
 if "micah" not in names:
-    print("not found")
+    print("not found") # will run since micah is not on the list
+
+# using conditionals to see if a list is empty
+nums = []
+if not nums: # could also say 'if nums == []'
+    print("empty")
+if nums == []:
+   print("empty")
+
+# using a for loop to print all items in a list
+cities = ["Tehran", "lahijan", "new york", "minnesota", "chicago", "utah", "dallas", "Albuquerque"]
+for city in cities:
+    print(city)
+
+# using the while loop to remove a certain value
+names = ["Rdr2", "tlou2", "mgs3", "tlou2", "gow2"]
+while "tlou2" in names:
+    names.remove("tlou2") # removes all the instance of 'tlou2'
+print(names)
