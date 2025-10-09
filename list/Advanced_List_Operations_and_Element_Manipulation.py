@@ -20,3 +20,9 @@ try:
 except:
     print("that item does not exist in the list")
 print(country)
+
+# using min, max, and sum
+digits = [8, 2, 9]
+print(min(digits))
+print(max(digits))
+print(sum(digits))
