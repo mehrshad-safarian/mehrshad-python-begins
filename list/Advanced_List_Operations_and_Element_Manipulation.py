@@ -12,3 +12,11 @@ items = [5, "kermanshah", True]
 items.pop() # by default removes the last item 
 removed_item = items.pop(0) # removes 5 and saves it into the variable
 print(removed_item, "\n", items)
+
+# using a remove method with a try and except
+country = ["Iran", "Usa", "China", "japan"]
+try:
+    country.remove("China")
+except:
+    print("that item does not exist in the list")
+print(country)
