@@ -8,10 +8,5 @@
 # type a number to add: 11
 # 100 + 11.0 = 111.0
 # print("the program did not break !")
-for num in range (2, 10 ,2):
-    print("value: {}".format(num) )
-
-for num in range (5):
-    if num == 2:
-        continue
-    print(num)
+nums = [5, 10 ,15]
+print(nums[ -2 : :])
