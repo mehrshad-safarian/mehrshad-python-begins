@@ -1,23 +1,18 @@
-# #using the try and except blocks, use tab to indent where necessary
-# try:
-#     temp = float( input("Type a number to add: "))
-#     print( '100 = {} = {}'.format(temp, 100 + temp) )
-# # without try/except print statement would not get hit if error occurs
-# print("the program did not break!")
+import requests  # کتابخانه مخصوص درخواست به API
 
-# type a number to add: 11
-# 100 + 11.0 = 111.0
-# print("the program did not break !")
-words = [] #empty list to store words.
-while True: #a while loop that keeps asking the user for input.
-    word = input(" Enter a word (type 'quit' to stop ) :").strip()
-    if word.lower() == "quit":
-         break
-    if not word: 
-         print("You entered nothing  try again.")
-         continue
-    words.append(word)
+# آدرس API عمومی برای کشورها
+url = "https://restcountries.com/v3.1/name/iran"
 
-print("\nU enterd these words:")
-for w in words:
-    print(w)
+# فرستادن درخواست GET
+response = requests.get(url)
+
+# بررسی وضعیت پاسخ
+if response.status_code == 200:
+    data = response.json()  # تبدیل پاسخ به فرمت JSON (داده قابل استفاده)
+    country = data[0]  # اولین نتیجه از لیست
+    print("نام کشور:", country["name"]["common"])
+    print("پایتخت:", country["capital"][0])
+    print("جمعیت:", country["population"])
+    print("منطقه:", country["region"])
+else:
+    print("خطا در دریافت داده‌ها:", response.status_code)
