@@ -19,4 +19,5 @@ acquired_inventory.clear()
 print(acquired_inventory)
 
 laptop_inventory.sort()
+laptop_inventory.reverse()
 print(laptop_inventory)
