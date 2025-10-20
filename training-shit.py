@@ -1,18 +1,13 @@
-import requests  # کتابخانه مخصوص درخواست به API
+laptop_inventory = ["hp-2021-001", "dell-2022-002", "lenovo2023"]
+print(laptop_inventory)
+laptop_inventory.append(input("pls enter ur considered laptop :"))
+print(laptop_inventory)
 
-# آدرس API عمومی برای کشورها
-url = "https://restcountries.com/v3.1/name/iran"
 
-# فرستادن درخواست GET
-response = requests.get(url)
-
-# بررسی وضعیت پاسخ
-if response.status_code == 200:
-    data = response.json()  # تبدیل پاسخ به فرمت JSON (داده قابل استفاده)
-    country = data[0]  # اولین نتیجه از لیست
-    print("نام کشور:", country["name"]["common"])
-    print("پایتخت:", country["capital"][0])
-    print("جمعیت:", country["population"])
-    print("منطقه:", country["region"])
-else:
-    print("خطا در دریافت داده‌ها:", response.status_code)
+primery_inventory = ["hp-2021-001", "dell-2022-002", "lenovo2023"]
+print(f"primery inventory: ,{primery_inventory}")
+acquired_inventory = ["hp-2025-700", "dell-2024-583"]
+primery_inventory.extend(acquired_inventory)
+print(f"primery_inventory after acquired inventory: ,{primery_inventory}")
+primery_inventory.insert(1,"vaio-2025-726")
+print(f"final list of prymeries : {primery_inventory}")
