@@ -8,4 +8,8 @@ Right_hand_salaries = [int(emp[2].replace("k", "")) * 1000 for emp in employees 
 print(employees)
 print(f"Right handes fee : ${Right_hand_salaries[0]}, ${Right_hand_salaries[1]}")
 average_Right_hand_salaries = sum(Right_hand_salaries) / len(Right_hand_salaries)
-print(f" Average Right salary dutch payes : ${average_Right_hand_salaries}")
+print(f"Average Right salary dutch payes : ${average_Right_hand_salaries}")
+
+# Knowing the positions and using set to remove repitations
+positions = set([emp[1] for emp in employees])
+print(positions)
