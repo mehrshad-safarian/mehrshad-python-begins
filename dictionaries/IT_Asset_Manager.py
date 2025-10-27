@@ -14,11 +14,11 @@ software_licenses = {
     'expiration': 'December 2026'
 }
 
-# Employee directory dictionary
-employee_directory = {
-    'IT_Support': 'support@learnitlessons.com',
-    'HR': 'hr@learnitlessons.com'
-}
+# Employee directory 
+employee_ = {}  
+employee_['IT_Support'] = 'support@learnitlessons.com'  
+employee_directory['HR'] = 'hr@learnitlessons.com'  
+
 
 # Workstation dictionary
 workstation = {
@@ -30,5 +30,5 @@ workstation = {
 
 print("Inventory:", inventory)
 print("Software Licenses:", software_licenses)
-print("Employee Directory:", employee_directory)
+print("Employee:", employee)
 print("Workstation:", workstation)
