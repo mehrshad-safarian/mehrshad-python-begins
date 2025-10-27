@@ -15,9 +15,9 @@ software_licenses = {
 }
 
 # Employee directory 
-employee_ = {}  
-employee_['IT_Support'] = 'support@learnitlessons.com'  
-employee_directory['HR'] = 'hr@learnitlessons.com'  
+employee = {}  
+employee['IT_Support'] = 'support@learnitlessons.com'  
+employee['HR'] = 'hr@learnitlessons.com'  
 
 
 # Workstation dictionary
