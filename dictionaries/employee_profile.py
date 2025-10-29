@@ -9,3 +9,6 @@ clearance = user_data.get('security_level', 'basic')
 
 bonus_elegible = user_data['status'] if 'status' in user_data else 'contractor'
 
+print(f"Clearance level: {clearance}")
+print(f"Bonus eligibility: {bonus_eligible}")
+
