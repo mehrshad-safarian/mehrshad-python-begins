@@ -47,5 +47,16 @@ print(laptop_status)
 # which is another dictionary with all the laptop info.
 
 # using .get() with an empty dictionary {} as default:
-assignd_employee = it_inventory.get("LAP001", {})
-print(assignd_employee.get("assigned_to", "No one"))
+assigned_employee = it_inventory.get("LAP001", {})
+print(assigned_employee.get("assigned_to", "No one"))
+# .get("LAP001", {}) → returns the LAP001 dictionary if it exists, otherwise an empty {}.
+# .get("assigned_to", "No one") → looks for the employee name inside it.
+
+# going deeper (nested .get()):
+purchase_info = it_inventory.get("LAP001", {}).get("purchase_info", {})
+print(purchase_info.get("date", "unknown"))
+print(purchase_info.get("cost", "unknown"))
+print(purchase_info.get("supplier", "unknown"))
+# The first .get("LAP001", {}) finds the laptop dictionary.
+# The second .get("purchase_info", {}) goes inside that dictionary.
+# Finally, each .get() reads one key safely (date, cost, supplier).
