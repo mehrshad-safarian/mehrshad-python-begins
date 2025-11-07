@@ -76,3 +76,16 @@ for asset_id, asset_info in it_inventory.items():
     print(f"Equipment Type: {asset_info['type']}")
     print(f"Current Status: {asset_info['status']}")
     print("-" * 25)
+
+print("Current Equipment Status Report: ")
+for asset_id, asset_info in it_inventory.items():
+    location = asset_info['location']
+    status = asset_info['status']
+    model = asset_info['model']
+    print(f"{asset_id}: {model} - located in {location} - status: {status}")
+
+print("\nMaintenance Summary:")
+for asset_id, asset_info in it_inventory.items():
+    last_check = asset_info['maintenance']['last_check']
+    condition = asset_info["maintenance"]['condition']
+    print(f"{asset_id} - Last check: {last_check}, Condition: {condition}")
