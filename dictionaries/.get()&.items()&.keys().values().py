@@ -123,6 +123,10 @@ for equipment in it_inventory.values():
     print(f"Location: {equipment['location']}")
     print("-" * 30)
 
+print("\nMaintenance Overview:")
+for equipment in it_inventory.values():
+    print(f"{equipment['type']}: {equipment['maintenance']['condition']}")
+
 print("\nEquipment by location:")
 # Extract locations into two variables
 a = it_inventory["LAP001"]["location"]
@@ -145,7 +149,14 @@ else:
     chosen_location = None
 
 # If a valid location was chosen, display related equipment
+# این حلقه این طوری میشه که اگه مقدار وجود داشته باشه 
+# True
+# باشه که طبق انتخابایی که گذاشتیم خروجی میده 
+# ولی اگه نه چیزی رو کاربر انتخاب نکرده باشه 
+# False 
+# باشه هیچ مقداری بیرون نمیاد 
 if chosen_location:
     for equipment in it_inventory.values():
         if equipment["location"] == chosen_location:
             print(f"{equipment['type']} - {equipment['model']}")
+
