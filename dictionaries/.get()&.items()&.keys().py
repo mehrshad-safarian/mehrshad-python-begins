@@ -89,3 +89,25 @@ for asset_id, asset_info in it_inventory.items():
     last_check = asset_info['maintenance']['last_check']
     condition = asset_info["maintenance"]['condition']
     print(f"{asset_id} - Last check: {last_check}, Condition: {condition}")
+
+# Getting all asset ids in the inventory
+asset_ids = it_inventory.keys()
+print("Available Asset IDs: ", asset_ids)
+for asset_id in it_inventory.keys():
+    if asset_id.startswith("LAP"):
+        print(f"Found laptop: {asset_id}")
+    elif asset_id.startswith("MON"):
+        print(f"Found monitor: {asset_id}")
+
+laptop_count = 0
+monitor_count = 0
+
+for asset_id in it_inventory.keys():
+    if asset_id.startswith("LAP"):
+        laptop_count += 1
+    elif asset_id.startswith("MON"):
+        monitor_count += 1  
+print(f"Total laptop's: {laptop_count}, Total monitor's: {monitor_count}")
+
+if "LAP001" in it_inventory.keys():
+    print("Laptop LAP001 is in inventory")
