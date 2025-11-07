@@ -52,11 +52,27 @@ print(assigned_employee.get("assigned_to", "No one"))
 # .get("LAP001", {}) → returns the LAP001 dictionary if it exists, otherwise an empty {}.
 # .get("assigned_to", "No one") → looks for the employee name inside it.
 
+department = it_inventory.get("LAP001", {}).get("department", {})
+print(f"department: ", {department})
+# Both examples use two .get() calls, but in different ways.
+# In the first one, the second .get() is used inside print() after storing the first result in a variable.
+# In the second one, both .get() calls are chained together in a single line (nested call).
+# So the logic is the same — only the structure differs:
+# first → two steps (clearer)
+# second → nested .get() (shorter)
+
 # going deeper (nested .get()):
 purchase_info = it_inventory.get("LAP001", {}).get("purchase_info", {})
 print(purchase_info.get("date", "unknown"))
-print(purchase_info.get("cost", "unknown"))
+print(f"{purchase_info.get("cost", "unknown")} $")
 print(purchase_info.get("supplier", "unknown"))
 # The first .get("LAP001", {}) finds the laptop dictionary.
 # The second .get("purchase_info", {}) goes inside that dictionary.
 # Finally, each .get() reads one key safely (date, cost, supplier).
+
+# basic iteration through inventory items 
+for asset_id, asset_info in it_inventory.items():
+    print(f"Asset ID: {asset_id}")
+    print(f"Equipment Type: {asset_info['type']}")
+    print(f"Current Status: {asset_info['status']}")
+    print("-" * 25)

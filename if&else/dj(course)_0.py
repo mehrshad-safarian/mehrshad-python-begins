@@ -1,4 +1,4 @@
-while True:
+while True: # loop until valid input
     try:
         a = int(input("pls Enter number a (which should be int!): "))
         b = int(input("pls Enter number b (which should be int!): "))
