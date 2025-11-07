@@ -111,3 +111,41 @@ print(f"Total laptop's: {laptop_count}, Total monitor's: {monitor_count}")
 
 if "LAP001" in it_inventory.keys():
     print("Laptop LAP001 is in inventory")
+
+# Getting all equipment details 
+all_equipment = it_inventory.values()
+
+print("current status Report:")
+for equipment in it_inventory.values():
+    print(f"Type: {equipment['type']}")
+    print(f"Model: {equipment['model']}")
+    print(f"Status: {equipment['status']}")
+    print(f"Location: {equipment['location']}")
+    print("-" * 30)
+
+print("\nEquipment by location:")
+# Extract locations into two variables
+a = it_inventory["LAP001"]["location"]
+b = it_inventory["MON002"]["location"]
+
+# Show both options to the user
+print(f"A: {a}")
+print(f"B: {b}")
+
+# Ask user to choose one
+user_choice = input("Choose a location (A/B): ").strip().upper()
+
+# Determine which location was selected
+if user_choice == "A":
+    chosen_location = a
+elif user_choice == "B":
+    chosen_location = b
+else:
+    print("Invalid choice!")
+    chosen_location = None
+
+# If a valid location was chosen, display related equipment
+if chosen_location:
+    for equipment in it_inventory.values():
+        if equipment["location"] == chosen_location:
+            print(f"{equipment['type']} - {equipment['model']}")
