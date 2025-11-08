@@ -156,7 +156,35 @@ else:
 # False 
 # باشه هیچ مقداری بیرون نمیاد 
 if chosen_location:
-    for equipment in it_inventory.values():
+     for equipment in it_inventory.values():
         if equipment["location"] == chosen_location:
             print(f"{equipment['type']} - {equipment['model']}")
+
+
+# Updating existing equipment infirmation
+# Making copy of our original dict
+
+# demo_inventory = it_inventory.copy()
+# print("Before Update :")
+# print(f"Status {demo_inventory['LAP001']['status']}")
+# print(f"Location: {demo_inventory['LAP001']['location']}")
+# print(f"Maintenance {demo_inventory['LAP001']['maintenance']['last_check']}")
+# print(f"Status {demo_inventory['LAP001']['status']}")
+# print("-" * 25)
+
+
+# Make a copy of the original inventory
+demo_inventory = it_inventory.copy()
+print("Before Update:")
+# Create a list of messages you want to print
+info_list = [
+    f"Status: {demo_inventory['LAP001']['status']}",
+    f"Location: {demo_inventory['LAP001']['location']}",
+    f"Maintenance: {demo_inventory['LAP001']['maintenance']['last_check']}",
+    f"Status: {demo_inventory['LAP001']['status']}"
+]
+# Loop through each message and print it with a separator line
+for info in info_list:
+    print(info)
+    print("-" * 25)
 
