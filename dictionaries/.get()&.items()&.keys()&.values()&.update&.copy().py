@@ -188,3 +188,25 @@ for info in info_list:
     print(info)
     print("-" * 25)
 
+# Update method 
+demo_inventory['LAP001'].update({
+    "status": "Under Maintenance",
+    "location": "IT Department",
+    "maintenance": {
+        "last_check": "2025-4-17",
+        "next_check": "2026-7-17",
+        "condition": "Excellent!"
+    }
+})
+print("\nAfter Update:")
+print(f"Status: {demo_inventory}")
+info_list = [
+    f"Status: {demo_inventory['LAP001']['status']}",
+    f"Location: {demo_inventory['LAP001']['location']}",
+    f"Maintenance: {demo_inventory['LAP001']['maintenance']['last_check']}",
+    f"Status: {demo_inventory['LAP001']['status']}"
+]
+# Loop through each message and print it with a separator line
+for info in info_list:
+    print(info)
+    print("-" * 25)
