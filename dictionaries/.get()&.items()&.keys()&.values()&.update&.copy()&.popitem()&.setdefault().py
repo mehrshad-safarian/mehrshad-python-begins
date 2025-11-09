@@ -255,3 +255,8 @@ service_tag = demo_inventory["MON002"].setdefault("service_tag", "not registered
 warranty_status = demo_inventory["MON002"].setdefault("warranty_status", "not assigned")
 print(f"service_tag: {service_tag}")
 print(f"warranty_status: {warranty_status}")
+
+
+print("\nUpdated MON002 record:")
+for key, value in demo_inventory["MON002"].items():
+    print(f"{key}, {value}")
