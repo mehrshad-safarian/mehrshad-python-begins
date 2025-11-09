@@ -233,3 +233,25 @@ print(f"Type: {last_item_details['type']}")
 print(f"model: {last_item_details['model']}")
 
 print("Remaining inventory size:", len(demo_inventory))
+
+empty_dictionary = {}
+try:
+    empty_dictionary.popitem()
+except KeyError:
+    print("\nCannot popitem() from empty inventory")
+
+# set default values for existing  and non-existing fields
+demo_inventory = it_inventory.copy()
+print("working with LAP001")
+
+status = demo_inventory["LAP001"].setdefault("status", "unknown")
+print(f"Existing status:{status}")
+
+notes = demo_inventory["LAP001"].setdefault("notes", "No additional info")
+print(f"New field 'notes': {notes}")
+
+print("\nWorking with MON002:")
+service_tag = demo_inventory["MON002"].setdefault("service_tag", "not registered")
+warranty_status = demo_inventory["MON002"].setdefault("warranty_status", "not assigned")
+print(f"service_tag: {service_tag}")
+print(f"warranty_status: {warranty_status}")
