@@ -210,3 +210,16 @@ info_list = [
 for info in info_list:
     print(info)
     print("-" * 25)
+
+
+# Using copy() and popitem() methods 
+demo_inventory = it_inventory.copy()
+print("Initial inventory size:", len(demo_inventory))
+
+demo_inventory["KBD001"] = {
+    "type": "Keyboard",
+    "model": "logitech MX keys", 
+    "location": "IT storage"
+}
+print("\nAfter adding new item:")
+print("inventory size:", len(demo_inventory))
