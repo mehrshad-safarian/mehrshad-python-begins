@@ -223,3 +223,10 @@ demo_inventory["KBD001"] = {
 }
 print("\nAfter adding new item:")
 print("inventory size:", len(demo_inventory))
+lat_item_id, last_item_details = demo_inventory.popitem()
+print(f"\nLast added item removed:")
+print(f"Asset ID: {lat_item_id}")
+print(f"Type: {last_item_details['type']}")
+print(f"model: {last_item_details['model']}")
+
+print("Remaining inventory size:", len(demo_inventory))
