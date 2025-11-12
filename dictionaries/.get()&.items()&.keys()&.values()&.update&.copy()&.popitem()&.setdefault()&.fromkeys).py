@@ -294,3 +294,10 @@ for laptop_id, details in new_laptops.items():
     print(f"Status: {details['status']}")
     print(f"Location: {details['location']}")
     print(f"Maintenance Status: {details['maintenance']['condition']}")
+
+
+print("\nCaution with shared references:")
+new_laptops["LAP003"]["status"] = "In Use"
+new_laptops["LAP004"]["status"] = "In Use"
+
+new_laptop_correct = {id: default_structure.copy() for id in new_laptop_ids }
