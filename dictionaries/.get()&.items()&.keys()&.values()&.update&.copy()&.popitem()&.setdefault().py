@@ -260,3 +260,37 @@ print(f"warranty_status: {warranty_status}")
 print("\nUpdated MON002 record:")
 for key, value in demo_inventory["MON002"].items():
     print(f"{key}, {value}")
+
+
+
+
+server_metrics = [["CPU_usage", "RAM_usage", "Disk_space"],
+               ["Network_in", "Network_out", "Active_connections"],
+                ["Response_time", "Error_rate", "Queue_length"]]
+resource_Metrics = server_metrics[0]
+print(resource_Metrics)
+network_in = server_metrics[1][0] #this is how we refer to spacial item we have in mind
+print(network_in)
+
+
+default_structure = {
+    "type": "Not Specified",
+    "model": "Not Specified",
+    "status": "Pending",
+    "location": "IT Storage",
+    "maintenance": {
+        "last_check": 'Non',
+        "next_check": "To be Scheduled",
+        "condition": "Not Checked",
+    }
+}
+
+new_laptop_ids = ["LAP003","LAP004","LAP005"]
+new_laptops = dict.fromkeys(new_laptop_ids,default_structure)
+
+print("Newly created inventory entries:")
+for laptop_id, details in new_laptops.items():
+    print(f"\nAsset ID: {laptop_id}")
+    print(f"Status: {details['status']}")
+    print(f"Location: {details['location']}")
+    print(f"Maintenance Status: {details['maintenance']['condition']}")
