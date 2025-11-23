@@ -18,3 +18,8 @@ email_dict = {
     for name in employee_names
     }
 print(email_dict)
+
+email_dict =  {}
+for name in employee_names:
+    email_dict[name] = name.lower().replace(' ', '.') + '@company.com'
+    print(email_dict)
