@@ -7,3 +7,9 @@ combined_phases = project_phases + ("maintenance",)
 current_phase = project_phases[0]
 print(combined_phases)
 print(current_phase)
+
+serve_status = ("active", "inactive", "active", "maintenance")
+active_status = serve_status.count("active")
+inactive_position = serve_status.index("inactive")
+config_settings = ("debug_mode", "test_server", "logging_enable")
+config_settings[0] = "release_mode" 
