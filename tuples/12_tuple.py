@@ -5,7 +5,12 @@ empty_tuple = ()
 # Tuples with mixed data types
 mixed_tuple = ("monitor", 2.1, False, 70)
 # Tuples without parentheses
-numbers = 1, 2, 3, 4, 5, 6
+numbers = 1, 2, 3, 4, 4, 5, 6
+#  1. What is numbers = 1, 2, 3, 4, 4, 5, 6 ?
+# You might think this creates 6 separate variables,
+# but Python actually turns this into one tuple:
+# # numbers = (1, 2, 3, 4, 5, 6)
+
 # Accessing tuple elements
 print(mixed_tuple[1])  # Output: 2.1
 # Tuple immutability
@@ -18,3 +23,19 @@ coordinates = 10, 20, 30
 # Tuple unpacking
 x, y, z = coordinates
 print(f"X:{x}, Y:{y}, Z:{z}")
+# Tuples methods 
+# Count (element)
+# index(element)
+print(numbers.count(2))
+print(numbers.count(4))
+# Tuples as Return Values
+def get_name_and_age():
+    name = "arthur"
+    age = 36
+    return name, age # is equivalent to return (name, age)
+result = get_name_and_age()
+print(result)
+
+# the return tuple can be unpacked into individual variables if desired 
+name, age = get_name_and_age()
+print(f"Name: {name}, Age: {age}")
