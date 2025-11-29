@@ -101,5 +101,18 @@ except TypeError as e:
 
 # course enrollment tracking
 course_enrollment = (
-    
+     ("CS101",22, "near capacity"),
+    ("DS201",20, "full"),
+    ("MBA102",43, "Available"),
+    ("MA203",49, "Near capacity")
+)
+enrollment_list = list(course_enrollment)
+updated_enrollment = tuple(enrollment_list)
+
+#course schedule entries : (course_id, day, start_time, end_time, room)
+course_schedule = (
+    ("CS101", "Monday", "08:00", "11:00", "Room 101"),
+    ("DS201", "Wednesday", "11:00", "14:30", "Room 202"),
+    ("MBA102", "Friday", "14:00", "16:30", "Room 303"),
+    ("MA203", "Tuesday", "09:00", "11:30", "Room 404")
 )

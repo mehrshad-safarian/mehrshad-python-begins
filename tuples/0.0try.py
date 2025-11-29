@@ -12,4 +12,10 @@ serve_status = ("active", "inactive", "active", "maintenance")
 active_status = serve_status.count("active")
 inactive_position = serve_status.index("inactive")
 config_settings = ("debug_mode", "test_server", "logging_enable")
-config_settings[0] = "release_mode" 
+config_settings[0] = "release_mode" # This will raise a TypeError because tuple doesn't support item assignment
+
+system_info = ("Production Server", 2.5, [" CPU", "Memory", "SSD"])
+resource_group = system_info[2][1]
+
+db_config = ("localhost", 5432, "userdb", "admin")
+host, port, database, user = db_config

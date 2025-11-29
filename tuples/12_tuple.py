@@ -38,4 +38,4 @@ print(result)
 
 # the return tuple can be unpacked into individual variables if desired 
 name, age = get_name_and_age()
-print(f"Name: {name}, Age: {age}")
+print(f"Name: {name}, Age: {age}") # in this case the return tuple is unpacked into name and age variables allowing us to access individual values separately . 
