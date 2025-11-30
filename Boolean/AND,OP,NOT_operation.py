@@ -1,3 +1,4 @@
+# ADD
 # Authentication system operation example 
 has_username = True      # User has entered a username
 has_password = True      # User has entered a password
@@ -11,3 +12,19 @@ can_access = is_authenticated and has_permissions
 # Output results
 print(f"Credentials valid: {credentials_valid}")   # Shows if login info is complete
 print(f"Access granted: {can_access}")            # Shows if user is allowed to access
+# ADD
+
+# OR
+# Login methods 
+has_password = False
+has_fingerprint = False
+can_login = has_password or has_fingerprint
+
+# Backup systems status
+primary_running = False
+backup_active = True 
+system_available = primary_running or backup_active 
+
+# Output results
+print(f"Can login: {can_login}")                 # True if either method is available
+print(f"System available: {system_available}")   # True if either system is operational
