@@ -13,6 +13,7 @@ can_access = is_authenticated and has_permissions
 print(f"Credentials valid: {credentials_valid}")   # Shows if login info is complete
 print(f"Access granted: {can_access}")            # Shows if user is allowed to access
 # ADD
+print()
 
 # OR
 # Login methods 
@@ -28,3 +29,18 @@ system_available = primary_running or backup_active
 # Output results
 print(f"Can login: {can_login}")                 # True if either method is available
 print(f"System available: {system_available}")   # True if either system is operational
+# OR
+print()
+
+# NOT
+# System maintenance check
+is_maintenance = True
+is_available = not is_maintenance
+
+# Process status
+is_busy = False
+can_process = not is_busy
+
+# Output results
+print(f"System available: {is_available}")   # False during maintenance
+print(f"Ready to process : {can_process}")   # True if not busy
