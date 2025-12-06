@@ -30,5 +30,5 @@ print("cm_height:", cm_height, "is all digits =", cm_height.isdigit()) # Returns
 print("SAVE".islower())  # Returns: False (uppercase)
 print("SAVE".isupper())  # Returns: True (uppercase)
 
-B = "Boolaen".startswith("B")  # Returns: True
+B = "Boolean".startswith("B")  # Returns: True
 print(B)
