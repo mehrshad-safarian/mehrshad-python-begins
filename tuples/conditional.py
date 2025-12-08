@@ -30,6 +30,28 @@ else:
     pass
 
 
+favorite_book = input ("Enter the title of a favorite book:") 
+if favorite_book.istitle():
+    print(favorite_book,"-nice capitalization in that title!")
+else:
+    print(favorite_book,"-Tip: capitalize each word for book titles.")
+print()
+
+a_number = input("Enter a positive integer number: ")
+if a_number.isdigit():
+    print(a_number, "is a positive integer number.")
+else:
+    print(a_number, "is NOT a positive integer number.")
+# another if
+if a_number.isalpha():
+    print(a_number, "is more like a word")
+else:
+    pass
+
+
+
+
+
 
 # write a code in that the someone u know is the q if u know him/her
 # Loop forever until the user gives a valid answer
