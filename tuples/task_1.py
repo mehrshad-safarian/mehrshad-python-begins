@@ -12,5 +12,5 @@ print()
 # example below: remove case sensitivity from a string comparison
 # review and run code to test removing case sensitivity from a string comparison
 print("'hello' in greeting.lower() = ", 'hello' in greeting.lower()) # returns True
-print("'Hello' in greeting.lower() = ", 'Hello' in greeting.lower()) # returns True
+print("'Hello' in greeting.lower() = ", 'Hello' in greeting.lower()) # returns False
 print("'hello' in greeting if lower used = ", 'hello'.lower() in greeting.lower()) # returns True
