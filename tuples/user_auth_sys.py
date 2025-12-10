@@ -29,9 +29,6 @@ print(f"Account is active: {account_active}")
 if __name__ == "__main__":
     print("\nUser Authentication Demo Completed!")
 
-
-print()
-
 # IN CASE I FORGOT WHAT HAPPENED AI EXPLANATION:
 """
 def print_section(title):
