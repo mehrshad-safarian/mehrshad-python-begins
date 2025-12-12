@@ -33,5 +33,3 @@ So Python stops and returns 33
 ini
 Copy code
 result05 = 33"""
-
-ptint()
