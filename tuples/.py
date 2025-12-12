@@ -6,7 +6,7 @@ def is_price_valid(price):
     return MIN_PRICE <= price <= MAX_PRICE
 print(f"50 is a valid price: {is_price_valid(50)}")   # True
 print(f"5 is a valid price: {is_price_valid(5)}")    # False
-input_price = int(input("Enter a price: "))
+input_price = float(input("Enter a price: "))
 if is_price_valid(input_price):
     print("The price is valid.")
 else:
