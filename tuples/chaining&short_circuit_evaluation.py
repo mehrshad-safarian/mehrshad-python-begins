@@ -16,6 +16,7 @@ f = 5
 g = 6
 result03 = b + c <= e or f + g >= e == f == 5 # False or(True and False) --> False
 print(result03)
+<<<<<<< HEAD
 
 # This is called short-circuit evaluation:
 result04 = b + c * f >= e and (f + g) * c # True and 33 → 33 Because and returns the second value when the first is True.
@@ -35,3 +36,9 @@ Copy code
 result05 = 33"""
 
 print()
+=======
+result04 = b + c * f >= e and (f + g) * c # True and 33 → 33 Because and returns the second value when the first is True.
+print(result04)
+result05 = (f + g) * c or b + c * f <= e 
+print(result05)
+>>>>>>> bccaad1e006afe88cc4674cf4b2bb4f3ab1e7bef
