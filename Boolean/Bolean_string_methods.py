@@ -32,3 +32,4 @@ print("SAVE".isupper())  # Returns: True (uppercase)
 
 B = "Boolean".startswith("B")  # Returns: True
 print(B)
+

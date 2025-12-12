@@ -10,3 +10,4 @@ bool(True) # Returns: True
 bool(False) # Returns: False 
 print(bool(1))      # Returns: True
 print(bool(0))      # Returns: False
+

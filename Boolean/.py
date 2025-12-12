@@ -11,5 +11,3 @@ if is_price_valid(input_price):
     print("The price is valid.")
 else:
     print("The price is invalid.")
-
-print("move") # the mistake i made to save these codes in wrong folder pass

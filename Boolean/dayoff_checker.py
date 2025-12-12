@@ -20,3 +20,6 @@ print(f"Is it a weekend?: {is_weekend}")
 print(f"Does the employee get a ady off?: {get_day_off}")
 if __name__ == "__name__":
     print("\nBasic boolean demo completed! ".istitle())
+
+
+
