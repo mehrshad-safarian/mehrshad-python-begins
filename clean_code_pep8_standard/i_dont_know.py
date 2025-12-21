@@ -35,6 +35,6 @@ def calculate_rectangle_area(length, width):
     :param width:
     :return:
     """
-    area = length * width
+    return length * width
 area = calculate_rectangle_area(length = 5, width = 10)
 print(f"The area of a rectangle with length 5 and width 10 is: {area}")
