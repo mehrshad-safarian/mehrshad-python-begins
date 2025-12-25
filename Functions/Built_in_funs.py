@@ -7,4 +7,5 @@ len("111") # Returns 3
 int("111") # Returns 111
 float("111") # Returns 111.0
 sum((3,5.4)) # Returns 5.8
-print(sum)
+min(2,0,9) # Returns 0
+max(2,0,9) # Returns 9
