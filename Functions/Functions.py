@@ -60,3 +60,11 @@ We used numbers = [] to create a list, and each time a number was entered, numbe
 """
 average = sum(numbers) / len(numbers)
 print(f"average of ur number's is :{average}")
+rounded_avg_num = round(average)
+print(f"Rounded avg og ur number is: {rounded_avg_num}")
+
+# Using type()
+mixed_list = [1, "three", 3.745, [9, 10]]
+for item in mixed_list:
+    print(f"The type of {item}, is{type(item)}")
+    
