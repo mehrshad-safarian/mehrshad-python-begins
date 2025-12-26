@@ -69,7 +69,7 @@ for item in mixed_list:
     print(f"The type of {item}, is{type(item)}")
 
 
-String Manipuation
+# String Manipulation
 message = "hello, world!"
 print(message.upper())
 
