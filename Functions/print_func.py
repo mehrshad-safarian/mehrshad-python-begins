@@ -3,4 +3,4 @@
 # Outputs to the console
 print("Hello, World!")  # Single argument
 print()                 # No arguments
-print("Bye", "then") # Multiple arguments
+print("Bye,", "then.") # Multiple arguments
