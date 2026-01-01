@@ -18,3 +18,28 @@ def hat_available(color):
     return(color.lower() in hat_colors)
 hats_in_stock =  hat_available("brown")
 print("Available hats are:", hats_in_stock)
+
+
+first_name = "sydney"
+
+def hat_available(*colors):  # Taking unlimited number of arguments
+    hat_colors = "brown, black, purple, white, green, grey, pink"
+    results = []
+    for color in colors:
+        results.append(color.lower() in hat_colors)
+    return results
+hats_in_stock = hat_available("brown", "pink", "white")
+print("Available hats are:", hats_in_stock)
+
+
+
+
+
+def hat_available(*colors):
+    hat_colors = ["brown", "black", "purple", "white", "green", "grey", "pink"]
+    available = [c for c in colors if c.lower() in hat_colors]
+    return available
+
+hats_in_stock = hat_available("brown", "pink", "white", "red")
+print("Available hats are:", hats_in_stock)
+
