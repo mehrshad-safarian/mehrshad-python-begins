@@ -9,7 +9,7 @@ if 'x' not in word:
     print("{} does not contain the character 'b' ".format(word))
 
 
-# Case sensitivity matter
+# Case sensitivity matter so we use this fella '.lower()'
 word = "XBaseball"
 if 'x' in word.lower():
     print("{} contain the character 'x' ".format(word))
