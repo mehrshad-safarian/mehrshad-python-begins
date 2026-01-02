@@ -7,3 +7,11 @@ if x < y :
 tmp = int(input("What is 5 + 5?"))
 if tmp == 10:
     print(" U got it right !")
+
+
+# Using else statement
+name = "mehrshad"
+if name == "mehrshad":
+    print("Hello", name)
+else:
+    print("hello{}!".format(name))
