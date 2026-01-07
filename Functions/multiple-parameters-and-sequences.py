@@ -27,7 +27,7 @@ def hat_available(*colors):  # Taking unlimited number of arguments
     results = []
     for color in colors:
         results.append(color.lower() in hat_colors)
-    return results
+    return results 
 hats_in_stock = hat_available("brown", "pink", "white")
 print("Available hats are:", hats_in_stock)
 
